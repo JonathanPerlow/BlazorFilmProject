@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "NFLXV.Admin.UI/1.0.0": {
+        "dependencies": {
+          "NFLXV.Common": "1.0.0"
+        },
+        "runtime": {
+          "NFLXV.Admin.UI.dll": {}
+        }
+      },
+      "NFLXV.Common/1.0.0": {
+        "runtime": {
+          "NFLXV.Common.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NFLXV.Admin.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NFLXV.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

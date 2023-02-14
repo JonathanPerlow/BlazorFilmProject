@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "sONN4NVf4mJhTeyDAQMNObw7ltbZF6mJsykvjukKL3U=",
+  "Source": "NFLXV.Membership.API",
+  "BasePath": "_content/NFLXV.Membership.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

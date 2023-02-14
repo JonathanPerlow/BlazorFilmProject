@@ -1,0 +1,17 @@
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\bin\Debug\net7.0\NFLXV.Membership.Database.deps.json
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\bin\Debug\net7.0\NFLXV.Membership.Database.runtimeconfig.json
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\bin\Debug\net7.0\NFLXV.Membership.Database.dll
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\bin\Debug\net7.0\NFLXV.Membership.Database.pdb
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\bin\Debug\net7.0\NFLXV.Common.dll
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\bin\Debug\net7.0\NFLXV.Common.pdb
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.csproj.AssemblyReference.cache
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.GeneratedMSBuildEditorConfig.editorconfig
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.AssemblyInfoInputs.cache
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.AssemblyInfo.cs
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.csproj.CoreCompileInputs.cache
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.csproj.CopyComplete
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.dll
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\refint\NFLXV.Membership.Database.dll
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.pdb
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.genruntimeconfig.cache
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\ref\NFLXV.Membership.Database.dll

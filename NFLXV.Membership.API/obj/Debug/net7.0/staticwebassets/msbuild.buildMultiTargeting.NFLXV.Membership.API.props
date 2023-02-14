@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NFLXV.Membership.API.props" />
+</Project>

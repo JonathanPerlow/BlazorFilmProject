@@ -10,3 +10,15 @@ D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVi
 D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Common\obj\Debug\net7.0\refint\NFLXV.Common.dll
 D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Common\obj\Debug\net7.0\NFLXV.Common.pdb
 D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Common\obj\Debug\net7.0\ref\NFLXV.Common.dll
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Common\bin\Debug\net7.0\NFLXV.Common.deps.json
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Common\bin\Debug\net7.0\NFLXV.Common.dll
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Common\bin\Debug\net7.0\NFLXV.Common.pdb
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Common\obj\Debug\net7.0\NFLXV.Common.csproj.AssemblyReference.cache
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Common\obj\Debug\net7.0\NFLXV.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Common\obj\Debug\net7.0\NFLXV.Common.AssemblyInfoInputs.cache
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Common\obj\Debug\net7.0\NFLXV.Common.AssemblyInfo.cs
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Common\obj\Debug\net7.0\NFLXV.Common.csproj.CoreCompileInputs.cache
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Common\obj\Debug\net7.0\NFLXV.Common.dll
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Common\obj\Debug\net7.0\refint\NFLXV.Common.dll
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Common\obj\Debug\net7.0\NFLXV.Common.pdb
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Common\obj\Debug\net7.0\ref\NFLXV.Common.dll

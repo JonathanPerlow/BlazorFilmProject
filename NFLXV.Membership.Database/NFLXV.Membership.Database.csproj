@@ -20,8 +20,4 @@
     <ProjectReference Include="..\NFLXV.Common\NFLXV.Common.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Extensions\" />
-  </ItemGroup>
-
 </Project>

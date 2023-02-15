@@ -33,3 +33,38 @@ D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVi
 D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\NFLXV.Common.dll
 D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\NFLXV.Common.pdb
 D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.csproj.CopyComplete
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\appsettings.json
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\NFLXV.Admin.UI.staticwebassets.runtime.json
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\NFLXV.Admin.UI.exe
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\NFLXV.Admin.UI.deps.json
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\NFLXV.Admin.UI.runtimeconfig.json
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\NFLXV.Admin.UI.dll
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\NFLXV.Admin.UI.pdb
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\NFLXV.Common.dll
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\NFLXV.Common.pdb
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.csproj.AssemblyReference.cache
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.AssemblyInfoInputs.cache
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.AssemblyInfo.cs
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.csproj.CoreCompileInputs.cache
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.RazorAssemblyInfo.cache
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.RazorAssemblyInfo.cs
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\staticwebassets\msbuild.NFLXV.Admin.UI.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\staticwebassets\msbuild.build.NFLXV.Admin.UI.props
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.NFLXV.Admin.UI.props
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.NFLXV.Admin.UI.props
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\scopedcss\bundle\NFLXV.Admin.UI.styles.css
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\scopedcss\projectbundle\NFLXV.Admin.UI.bundle.scp.css
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.csproj.CopyComplete
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.dll
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\refint\NFLXV.Admin.UI.dll
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.pdb
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.genruntimeconfig.cache
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\ref\NFLXV.Admin.UI.dll

@@ -15,3 +15,20 @@ D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVi
 D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.pdb
 D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.genruntimeconfig.cache
 D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\ref\NFLXV.Membership.Database.dll
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\bin\Debug\net7.0\NFLXV.Membership.Database.deps.json
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\bin\Debug\net7.0\NFLXV.Membership.Database.runtimeconfig.json
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\bin\Debug\net7.0\NFLXV.Membership.Database.dll
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\bin\Debug\net7.0\NFLXV.Membership.Database.pdb
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\bin\Debug\net7.0\NFLXV.Common.dll
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\bin\Debug\net7.0\NFLXV.Common.pdb
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.csproj.AssemblyReference.cache
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.AssemblyInfoInputs.cache
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.AssemblyInfo.cs
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.csproj.CoreCompileInputs.cache
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.csproj.CopyComplete
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.dll
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\refint\NFLXV.Membership.Database.dll
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.pdb
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\NFLXV.Membership.Database.genruntimeconfig.cache
+C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.Database\obj\Debug\net7.0\ref\NFLXV.Membership.Database.dll

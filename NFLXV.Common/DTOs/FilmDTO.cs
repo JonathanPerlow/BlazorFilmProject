@@ -8,7 +8,7 @@ public class FilmGetDTO
     public int Id { get; set; }
     public string Title { get; set; } = null!;
 
-    public DateOnly MyProperty { get; set; } //default datetime(7) 
+    public DateOnly Released { get; set; } //default datetime(7) 
 
     public virtual bool Free { get; set; } // By default, a Boolean property is displayed via a CheckEdit control.
     public string Description { get; set; } = null!;
@@ -27,7 +27,7 @@ public class FilmCreateDTO
 {
     public string Title { get; set; } = null!;
 
-    public DateOnly MyProperty { get; set; } //default datetime(7) 
+    public DateOnly Released { get; set; } //default datetime(7) 
 
     public virtual bool Free { get; set; } // By default, a Boolean property is displayed via a CheckEdit control.
     public string Description { get; set; } = null!;

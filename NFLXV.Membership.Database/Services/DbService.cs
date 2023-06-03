@@ -32,6 +32,7 @@ public class DbService : IDbService
     private async Task<TEntity?> SingleAsync<TEntity>(Expression<Func<TEntity, bool>> expression)
         where TEntity : class, IEntity => await _Db.Set<TEntity>().SingleOrDefaultAsync(expression);
 
+
     public async Task<TDto> SingleAsync<TEntity, TDto>(Expression<Func<TEntity, bool>> expression)
         where TEntity : class, IEntity
          where TDto : class
@@ -49,6 +50,17 @@ public class DbService : IDbService
 
         foreach (var name in propertyNames)
             _Db.Set<TEntity>().Include(name).Load();
+    }
+
+    public void IncludeRef<TReferenceEntity>()
+    where TReferenceEntity : class, IReferenceEntity
+    {
+        var propertyNames = _Db.Model.FindEntityType(typeof(TReferenceEntity))?.GetNavigations().Select(x => x.Name);
+
+        if (propertyNames is null) return;
+
+        foreach (var name in propertyNames)
+            _Db.Set<TReferenceEntity>().Include(name).Load();
     }
 
     public async Task<bool> AnyAsync<TEntity>(Expression<Func<TEntity, bool>> expression)
@@ -106,6 +118,7 @@ public class DbService : IDbService
         return true;
     }
 
+ 
     public bool DeleteAsyncRefEntity<TReferenceEntity, TDto>(TDto dto)
         where TReferenceEntity : class
         where TDto : class
@@ -125,5 +138,12 @@ public class DbService : IDbService
         }
         return true;
     }
+    public string GetURL<TEntity>(TEntity entity) where TEntity : class, IEntity
+        => $"/{typeof(TEntity).Name.ToLower()}s/{entity.Id}";
+
+    public string GetURLRef<TReferenceEntity, TDto>(TDto dto) where TReferenceEntity : class, IReferenceEntity
+        => $"/{typeof(IReferenceEntity).Name.ToLower()}s/{dto}";
+
+
 
 }

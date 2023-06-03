@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\NFLXV.Membership.UI.props" />
+</Project>

@@ -1,0 +1,29 @@
+﻿@page "/"
+@inject IMembershipService MemberShipService
+<PageTitle>Dashboard</PageTitle>
+
+<h1>Dashboard</h1>
+
+
+<div class="d-flex flex-wrap">
+    @foreach (var film in Films)
+    {
+        <div class="card m-4 mb-3 rounded-0" style="width: 18rem;">
+            <img src="@film.ImageUrl" class="card-img-top rounded-0" alt="Film image">
+          <div class="card-body">
+            <h5 class="card-title">@film.Title</h5>
+                <a href="Film/@film.Id" class="btn btn-primary rounded-0">View @film.Title</a>
+          </div>
+        </div>
+    }
+</div>
+
+
+
+@code{
+    public List<FilmInfoDTO> Films { get; set; } = new();
+    protected override async Task OnInitializedAsync()
+    {
+        Films = await MemberShipService.GetFilmsAsync();
+    }
+}

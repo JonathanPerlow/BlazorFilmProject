@@ -68,3 +68,5 @@ C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\De
 C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.pdb
 C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\NFLXV.Admin.UI.genruntimeconfig.cache
 C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Admin.UI\obj\Debug\net7.0\ref\NFLXV.Admin.UI.dll
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\AutoMapper.dll
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Admin.UI\bin\Debug\net7.0\Newtonsoft.Json.dll

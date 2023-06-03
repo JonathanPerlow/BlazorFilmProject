@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NFLXV.Membership.Database.Entities;
+﻿namespace NFLXV.Membership.Database.Entities;
 
 public class Director : IEntity
 {

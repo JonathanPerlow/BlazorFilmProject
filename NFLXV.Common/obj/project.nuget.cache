@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8s08JzI4WX18RT3fkjVUZNql820ajlaDmDzLMswsFNXE64GKYbfCNIK630J+RrHz3scbGCrbxCpUxizHp4Nhcw==",
+  "dgSpecHash": "9tblaGP246k4APxZI364df6v3aBVo/vCtobpfJP1E0b7PGxUDJNj1YB6kAzjYadj7xyGP+b7hNjvc5icwcdjaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Common\\NFLXV.Common.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Common\\NFLXV.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\perlo\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

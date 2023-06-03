@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\NFLXV.Admin.UI.csproj": {}
+    "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\NFLXV.Admin.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\NFLXV.Admin.UI.csproj": {
+    "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\NFLXV.Admin.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\NFLXV.Admin.UI.csproj",
+        "projectUniqueName": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\NFLXV.Admin.UI.csproj",
         "projectName": "NFLXV.Admin.UI",
-        "projectPath": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\NFLXV.Admin.UI.csproj",
-        "packagesPath": "C:\\Users\\46736\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\obj\\",
+        "projectPath": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\NFLXV.Admin.UI.csproj",
+        "packagesPath": "C:\\Users\\perlo\\.nuget\\packages\\",
+        "outputPath": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\46736\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\perlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Common\\NFLXV.Common.csproj": {
-                "projectPath": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Common\\NFLXV.Common.csproj"
+              "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Common\\NFLXV.Common.csproj": {
+                "projectPath": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Common\\NFLXV.Common.csproj"
               }
             }
           }
@@ -43,6 +43,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,21 +68,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Common\\NFLXV.Common.csproj": {
+    "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Common\\NFLXV.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Common\\NFLXV.Common.csproj",
+        "projectUniqueName": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Common\\NFLXV.Common.csproj",
         "projectName": "NFLXV.Common",
-        "projectPath": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Common\\NFLXV.Common.csproj",
-        "packagesPath": "C:\\Users\\46736\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Common\\obj\\",
+        "projectPath": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Common\\NFLXV.Common.csproj",
+        "packagesPath": "C:\\Users\\perlo\\.nuget\\packages\\",
+        "outputPath": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\46736\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\perlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,6 +107,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -117,7 +129,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

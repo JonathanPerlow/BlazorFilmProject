@@ -1,0 +1,82 @@
+﻿@inject IAdminService AdminService
+@inject IMapper Mapper
+<div class="d-xl-flex justify-content-center">
+    <EditForm Model="@Model" OnValidSubmit="@OnFormSubmit" class="mb-5 border border-1 border-secondary p-2 w-25">
+        <DataAnnotationsValidator />
+        <h4>@Page Director</h4>
+        <div class="mb-3">
+            @if (Page.Equals(PageType.Delete))
+            {
+                <InputText id="title" class="form-control me-2" @bind-Value="Model.Name" disabled placeholder="Name"></InputText>
+            }
+        </div>
+
+        @if (!Page.Equals(PageType.Delete))
+        {
+            <div class="mb-3">
+                <InputText id="released" class="form-control me-2" @bind-Value="Model.Name" placeholder="Name"></InputText>
+                <ValidationMessage For="@(() => Model.Name)" />
+            </div>
+
+        }
+
+        <button type="submit" class="btn btn-@(Page.Equals(PageType.Delete) ? "danger" : "primary") rounded-0">@Page</button>
+    </EditForm>
+</div>
+
+
+@code {
+    DirectorModel Model { get; set; } = new();
+    [Parameter] public string Page { get; set; } = string.Empty;
+    [Parameter] public DirectorGetDTO DirectorGetDTO { get; set; } = new();
+    [Parameter] public DirectorCreateDTO DirectorCreateDTO { get; set; } = new();
+    [Parameter] public DirectorEditDTO DirectorEditDTO { get; set; } = new();
+    [Parameter] public DirectorDeleteDTO DirectorDeleteDTO { get; set; } = new();
+
+
+    [Parameter] public EventCallback<string> OnClick { get; set; }
+    [Parameter] public EventCallback<string> OnChanged { get; set; }
+
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        Model = Mapper.Map<DirectorModel>(DirectorGetDTO);
+    }
+
+    private async Task OnFormSubmit()
+    {
+        try
+        {
+
+            if (Page.Equals(PageType.Create))
+            {
+                DirectorCreateDTO = Mapper.Map<DirectorCreateDTO>(Model);
+                await AdminService.CreateAsync<DirectorCreateDTO>("directors", DirectorCreateDTO);
+            }
+            else if (Page.Equals(PageType.Edit))
+            {
+                DirectorEditDTO = Mapper.Map<DirectorEditDTO>(Model);
+                await AdminService.UpdateAsync<DirectorEditDTO>($"directors/{DirectorEditDTO.Id}", DirectorEditDTO);
+            }
+            else if (Page.Equals(PageType.Delete))
+            {
+                DirectorDeleteDTO = Mapper.Map<DirectorDeleteDTO>(Model);
+                await AdminService.DeleteAsync<DirectorDeleteDTO>($"directors/{DirectorDeleteDTO.Id}");
+            }
+            await OnChanged.InvokeAsync("");
+        }
+        catch
+        {
+            await OnChanged.InvokeAsync("Couldn't create/edit/delete the film.");
+        }
+    }
+}
+
+
+
+
+
+

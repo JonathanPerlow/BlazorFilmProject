@@ -1,0 +1,66 @@
+﻿@inject IMembershipService MemberShipService
+
+
+
+
+<div class="d-flex flex-column mb-3">
+    <a href="/" class="btn btn-primary rounded-0">
+        <i class="oi oi-arrow-left"></i>
+        <span class="vertical-align"> Back to DashBoard</span>
+    </a>
+    <section class="border border-secondary">
+        <div class="marquee" style="background-image:url('@Film.MarqueeUrl');" >
+            <img src="@Film.ImageUrl" alt="Film image" />
+        </div>
+        <div class="p-2" >
+            <h1>@Film.Title</h1>
+            <h4>@Film.Description</h4>
+            <h2>Director: @GetDirector()</h2>
+            <h2>Released: @Film.Released</h2>
+            <h2>Genres: @GetFilmGenres(Film)</h2>
+            <a href="VideoPlayer/@Film.Id" class="btn btn-primary rounded-0">Play @Film.Title</a>
+        </div>
+    </section>
+</div>
+
+
+@code {
+    [Parameter] public FilmInfoDTO Film { get; set; } = new();
+    [Parameter] public List<DirectorGetDTO> Director { get; set; } = new();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        Director = await MemberShipService.GetDirectorsAsync();
+    }
+    public string GetFilmGenres(FilmInfoDTO film)
+    {
+
+        string filmgenres = "";
+        foreach (var genre in film.Genres)
+        {
+            filmgenres += $"{genre.Name}, ";
+        }
+        if (filmgenres == "")
+        {
+            return "";
+        }
+        return filmgenres.Substring(0, filmgenres.Length - 2);
+    }
+
+    public string GetDirector()
+    {
+        string result = "";
+        foreach(var director in Director)
+        {
+            if(Film.DirectorId == director.Id)
+            {
+                result = director.Name;
+            }
+        }
+        return result;
+
+    }
+
+
+}

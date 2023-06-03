@@ -34,8 +34,17 @@ public interface IDbService
         where TEntity : class,
         IEntity where TDto : class;
 
+    public void Include<TEntity>()
+    where TEntity : class, IEntity;
+
+    public string GetURL<TEntity>(TEntity entity) where TEntity : class, IEntity;
+
+    public string GetURLRef<TReferenceEntity, TDto>(TDto dto) where TReferenceEntity : class, IReferenceEntity;
+
+
+
     Task<bool> DeleteAsync<TEntity>(int id) where TEntity : class, IEntity;
 
     bool DeleteAsyncRefEntity<TReferenceEntity, TDto>(TDto dto) where TReferenceEntity : class where TDto : class;
-
+    void IncludeRef<TReferenceEntity>() where TReferenceEntity : class, IReferenceEntity;
 }

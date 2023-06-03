@@ -1,0 +1,19 @@
+﻿.marquee{
+    position:relative;
+    max-width:200%;
+    height:400px;
+    overflow:hidden;
+    background-size: cover;
+
+}
+
+.marquee img {
+    position: absolute;
+    max-height:200px;
+    bottom: 0px;
+    margin: 30px;
+}
+
+section{
+    border: 1px solid darkgray;
+}

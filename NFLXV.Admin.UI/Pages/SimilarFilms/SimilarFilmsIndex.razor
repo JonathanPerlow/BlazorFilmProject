@@ -1,0 +1,56 @@
+﻿@inject IAdminService AdminService
+<table class="table mt-2">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Similar Films</th>
+      <th></th>
+
+    </tr>
+  </thead>
+  <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.Title</th>
+                <td>@GetSimilarFilm(item)</td>
+                <td>
+                        <div class="d-flex me-1 justify-content-end">
+                            <button class="btn btn-outline-primary rounded-0 me-1" @onclick="@(() => OnClick.InvokeAsync(new ClickModel(PageType.Edit, item.Id)))">Edit</button>
+                        </div>
+                </td>
+        </tr>
+    }
+
+
+  </tbody>
+</table>
+
+@code {
+    [Parameter] public List<FilmInfoDTO> Model { get; set; } = new();
+    [Parameter] public EventCallback<ClickModel> OnClick { get; set; } = new();
+
+
+    public string GetSimilarFilm(FilmInfoDTO input)
+    {
+
+        string result = "";
+        foreach (var film in input.SimilarFilms)
+        {
+            foreach (var similarfilm in Model)
+            {
+                if(similarfilm.Id == film.SimilarFilmId)
+                {
+                    result += $"{similarfilm.Title}, ";
+                }
+            }
+        }
+        if (result == "")
+        {
+            return "";
+        }
+        return result.Substring(0, result.Length - 2);
+    }
+
+   
+}

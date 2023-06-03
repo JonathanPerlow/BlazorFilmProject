@@ -6,7 +6,7 @@ public class NFLXVContext : DbContext
 {
     public DbSet<Film> Film => Set<Film>();
     public DbSet<Director> Director => Set<Director>();
-    public DbSet<SimilarFilms> SimilarFilms => Set<SimilarFilms>();
+    public DbSet<SimilarFilm> SimilarFilms => Set<SimilarFilm>();
     public DbSet<Genre> Genre => Set<Genre>();
     public DbSet<FilmGenres> FilmGenres => Set<FilmGenres>();
 
@@ -16,13 +16,13 @@ public class NFLXVContext : DbContext
     {
         base.OnModelCreating(builder);
         builder.Entity<FilmGenres>().HasKey(f => new { f.FilmId, f.GenreId });
-        builder.Entity<SimilarFilms>().HasKey(f => new { f.ParentFilmId, f.SimilarFilmId });
+        builder.Entity<SimilarFilm>().HasKey(f => new { f.ParentFilmId, f.SimilarFilmId });
 
         builder.Entity<Film>(entity =>
         {
             entity
                 .HasMany(m => m.SimilarFilms)
-                .WithOne(f => f.ParentFilm)
+                .WithOne(f => f.Parent)
                 .HasForeignKey(e => e.ParentFilmId)
                 .OnDelete(DeleteBehavior.ClientSetNull);
 

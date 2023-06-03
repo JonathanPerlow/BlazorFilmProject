@@ -1,12 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace NFLXV.Common.DTOs;
+﻿namespace NFLXV.Common.DTOs;
 
 public class DirectorGetDTO
 {
     public int Id { get; set; }
     public string Name { get; set; } = null!;
-    public List<FilmGetDTO> Films { get;set; } = new();
 }
 
 public class DirectorCreateDTO

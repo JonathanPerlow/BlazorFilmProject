@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFLXV.Admin.UI", "NFLXV.Admin.UI\NFLXV.Admin.UI.csproj", "{479DE878-3B2F-4A08-AFD7-250034FD3AFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NFLXV.Admin.UI", "NFLXV.Admin.UI\NFLXV.Admin.UI.csproj", "{479DE878-3B2F-4A08-AFD7-250034FD3AFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFLXV.Common", "NFLXV.Common\NFLXV.Common.csproj", "{734A91A1-C30B-4D2C-B125-0EC1D2AF38B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NFLXV.Common", "NFLXV.Common\NFLXV.Common.csproj", "{734A91A1-C30B-4D2C-B125-0EC1D2AF38B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFLXV.Membership.Database", "NFLXV.Membership.Database\NFLXV.Membership.Database.csproj", "{64D110F9-7303-4EB9-B58B-DA0C572E11A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NFLXV.Membership.Database", "NFLXV.Membership.Database\NFLXV.Membership.Database.csproj", "{64D110F9-7303-4EB9-B58B-DA0C572E11A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFLXV.Membership.API", "NFLXV.Membership.API\NFLXV.Membership.API.csproj", "{ECA99ABF-3AC2-431A-9302-EE9340579C65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NFLXV.Membership.API", "NFLXV.Membership.API\NFLXV.Membership.API.csproj", "{ECA99ABF-3AC2-431A-9302-EE9340579C65}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NFLXV.Membership.UI", "NFLXV.Membership.UI\NFLXV.Membership.UI.csproj", "{8B542738-1EDD-44F2-BDDE-A727A20F8C9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{ECA99ABF-3AC2-431A-9302-EE9340579C65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECA99ABF-3AC2-431A-9302-EE9340579C65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECA99ABF-3AC2-431A-9302-EE9340579C65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B542738-1EDD-44F2-BDDE-A727A20F8C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B542738-1EDD-44F2-BDDE-A727A20F8C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B542738-1EDD-44F2-BDDE-A727A20F8C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B542738-1EDD-44F2-BDDE-A727A20F8C9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

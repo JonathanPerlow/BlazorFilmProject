@@ -1,0 +1,127 @@
+﻿@inject IAdminService AdminService
+@inject IMapper Mapper
+
+<div class="d-xl-flex justify-content-center">
+    <EditForm Model="@Model" OnValidSubmit="@OnFormSubmit" class="mb-5 border border-1 border-secondary p-2 w-25">
+        <DataAnnotationsValidator />
+        <h4>@Page @Model.Title</h4>
+
+
+        @if (Page.Equals(PageType.Edit))
+        {
+            <InputSelect @bind-Value="SelectedSimilarFilms" multiple style="width: 375px;">
+
+                @foreach (var film in Films)
+                {
+                    @if(film.Id != Model.Id)
+                    {
+                        <option value="@film.Id">@film.Title</option>
+                    }
+                }
+            </InputSelect>
+            <ValidationMessage For="@(() => Films)" />
+        }
+
+
+        <button type="submit" class="btn btn-@(Page.Equals(PageType.Delete) ? "danger" : "primary") rounded-0">@Page</button>
+    </EditForm>
+</div>
+
+@code {
+    FilmModel Model { get; set; } = new();
+    [Parameter] public string Page { get; set; } = string.Empty;
+    [Parameter] public FilmInfoDTO FilmInfoDTO { get; set; } = new();
+
+
+    [Parameter] public EventCallback<string> OnClick { get; set; }
+    [Parameter] public EventCallback<string> OnChanged { get; set; }
+
+    public int[] SavedSimilarFilms { get; set; }
+    public int[] SelectedSimilarFilms { get; set; }
+
+    List<FilmInfoDTO> Films { get; set; } = new();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        Model = Mapper.Map<FilmModel>(FilmInfoDTO);
+        SavedSimilarFilms = GetSelectedSimilarFilmsFromDb(Model);
+        Films = await AdminService.GetAsync<FilmInfoDTO>("films");
+
+    }
+
+    private async Task OnFormSubmit()
+    {
+        try
+        {
+            await HandleSimilarFilmsSubmit(Model);
+
+            await OnChanged.InvokeAsync("");
+        }
+        catch
+        {
+            await OnChanged.InvokeAsync("Couldn't create/edit/delete the similarfilms.");
+        }
+    }
+
+    private async Task HandleSimilarFilmsSubmit(FilmModel model)
+    {
+        await RemoveSimilar(model);
+        await AddSimilar(model);
+    }
+
+    private async Task RemoveSimilar(FilmModel model)
+    {
+        //Remove all genres from this film
+        for (int i = 0; i < SavedSimilarFilms.Length; i++)
+        {
+            SimilarFilmsDTO deleteDto = new
+            (
+                model.Id,
+                SavedSimilarFilms[i]
+            );
+            await AdminService.DeleteAsyncRef<SimilarFilmsDTO>($"similarfilms/", deleteDto);
+
+            SimilarFilmsDTO deleteDto2 = new
+            (
+                SavedSimilarFilms[i],
+                model.Id
+            );
+            await AdminService.DeleteAsyncRef<SimilarFilmsDTO>($"similarfilms/", deleteDto2);
+        }
+    }
+    private async Task AddSimilar(FilmModel model)
+    {
+        //Add all genres for this film
+        for (int i = 0; i < SelectedSimilarFilms.Length; i++)
+        {
+            SimilarFilmsDTO saveDto = new
+            (
+                model.Id,
+                SelectedSimilarFilms[i]
+            );
+            await AdminService.CreateAsync<SimilarFilmsDTO>($"similarfilms/", saveDto);
+            SimilarFilmsDTO saveDto2 = new
+            (
+                SelectedSimilarFilms[i],
+                model.Id
+            );
+            await AdminService.CreateAsync<SimilarFilmsDTO>($"similarfilms/", saveDto2);
+
+        }
+    }
+
+
+    private int[] GetSelectedSimilarFilmsFromDb(FilmModel model)
+    {
+        SelectedSimilarFilms = new int[model.SimilarFilms.Count()];
+        int i = 0;
+        foreach (var film in model.SimilarFilms)
+        {
+            SelectedSimilarFilms[i] = film.SimilarFilmId;
+            i++;
+        }
+        return SelectedSimilarFilms;
+    }
+}
+

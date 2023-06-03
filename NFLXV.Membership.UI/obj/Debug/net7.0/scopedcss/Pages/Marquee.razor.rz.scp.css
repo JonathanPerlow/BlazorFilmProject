@@ -1,0 +1,19 @@
+.marquee[b-uzy5wkmydk]{
+    position:relative;
+    max-width:200%;
+    height:400px;
+    overflow:hidden;
+    background-size: cover;
+
+}
+
+.marquee img[b-uzy5wkmydk] {
+    position: absolute;
+    max-height:200px;
+    bottom: 0px;
+    margin: 30px;
+}
+
+section[b-uzy5wkmydk]{
+    border: 1px solid darkgray;
+}

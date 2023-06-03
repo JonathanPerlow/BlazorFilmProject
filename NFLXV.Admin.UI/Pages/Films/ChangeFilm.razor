@@ -1,0 +1,210 @@
+﻿@inject IAdminService AdminService
+@inject IMapper Mapper
+
+
+<div class="d-xl-flex justify-content-center">
+    <EditForm Model="@Model" OnValidSubmit="@OnFormSubmit" class="mb-5 border border-1 border-secondary p-2 w-25">
+        <DataAnnotationsValidator />
+        <h4>@Page Film</h4>
+        <div class="mb-3">
+            @if (Page.Equals(PageType.Delete))
+            {
+                <InputText id="title" class="form-control me-2" @bind-Value="Model.Title" disabled placeholder="Title"></InputText>
+            }
+            else
+            {             
+                <InputText id="title" class="form-control me-2" @bind-Value="Model.Title" placeholder="Title"></InputText>
+                <ValidationMessage For="@(() => Model.Title)" />
+            }
+            <ValidationMessage For="@(() => Model.Title)" />
+        </div>
+
+        @if (!Page.Equals(PageType.Delete))
+        {
+            <div class="mb-3">
+                <InputText id="released" class="form-control me-2" @bind-Value="Model.Released" placeholder="Released"></InputText>
+                <ValidationMessage For="@(() => Model.Released)" />
+            </div>
+            <div class="mb-3">
+                <InputText id="description" class="form-control me-2" @bind-Value="Model.Description" placeholder="Description"></InputText>
+                <ValidationMessage For="@(() => Model.Description)" />
+            </div>
+            <div class="mb-3">
+                <InputText id="filmurl" class="form-control me-2" @bind-Value="Model.FilmUrl" placeholder="FilmUrl"></InputText>
+                <ValidationMessage For="@(() => Model.FilmUrl)" />
+            </div>
+            <div class="mb-3">
+                <InputText id="filmurl" class="form-control me-2" @bind-Value="Model.ImageUrl" placeholder="ImageUrl"></InputText>
+                <ValidationMessage For="@(() => Model.ImageUrl)" />
+            </div>
+            <div class="mb-3">
+                <InputText id="filmurl" class="form-control me-2" @bind-Value="Model.MarqueeUrl" placeholder="MarqueeUrl"></InputText>
+                <ValidationMessage For="@(() => Model.MarqueeUrl)" />
+            </div>
+            <div class="mb-3">
+                <label>
+                    <InputCheckbox @bind-Value="Model.Free" />
+                    Free Film
+                </label>
+            </div>
+
+            <InputSelect @bind-Value="Model.DirectorId" class="form-control mb-3" >
+                <option value=0>Director ...</option>
+                @if(Directors != null)
+                {
+                    foreach (var directors in Directors)
+                    {
+                        <option value="@directors.Id">@directors.Name</option>
+                    }
+                }
+            </InputSelect>
+
+
+
+        }
+
+        @if (Page.Equals(PageType.Edit))
+        {
+            <InputSelect @bind-Value="SelectedGenres" multiple style="width: 375px;">
+
+                @foreach (var genre in Genres)
+                {
+                    <option value="@genre.Id">@genre.Name</option>
+                }
+            </InputSelect>
+            <ValidationMessage For="@(() => Genres)" />
+        }
+        <button type="submit" class="btn btn-@(Page.Equals(PageType.Delete) ? "danger" : "primary") rounded-0">@Page</button>
+    </EditForm>
+</div>
+
+
+@code {
+    FilmModel Model { get; set; } = new();
+    [Parameter] public string Page { get; set; } = string.Empty;
+    [Parameter] public FilmInfoDTO FilmInfoDTO { get; set; } = new();
+    [Parameter] public FilmCreateDTO FilmCreateDTO { get; set; } = new();
+    [Parameter] public FilmEditDTO FilmEditDTO { get; set; } = new();
+    [Parameter] public FilmDeleteDTO FilmDeleteDTO { get; set; } = new();
+
+
+    [Parameter] public EventCallback<string> OnClick { get; set; }
+    [Parameter] public EventCallback<string> OnChanged { get; set; }
+
+
+    public int[] SavedGenres { get; set; }
+    public int[] SelectedGenres { get; set; }
+
+
+    List<DirectorGetDTO> Directors { get; set; } = new();
+    List<GenreGetDTO> Genres { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Model = Mapper.Map<FilmModel>(FilmInfoDTO);
+        SavedGenres = GetSelectedGenresFromDb(Model);
+        Directors = await AdminService.GetAsync<DirectorGetDTO>("directors");
+        Genres = await AdminService.GetAsync<GenreGetDTO>("genres");
+    }
+
+    private async Task OnFormSubmit()
+    {
+        try
+        {
+
+            if (Page.Equals(PageType.Create))
+            {
+                FilmCreateDTO = Mapper.Map<FilmCreateDTO>(Model);
+                await AdminService.CreateAsync<FilmCreateDTO>("films", FilmCreateDTO);
+            }
+            else if (Page.Equals(PageType.Edit))
+            {
+                FilmEditDTO = Mapper.Map<FilmEditDTO>(Model);
+                await AdminService.UpdateAsync<FilmEditDTO>($"films/{FilmEditDTO.Id}", FilmEditDTO);
+                await HandleGenresSubmit(Model);
+            }
+            else if (Page.Equals(PageType.Delete))
+            {
+                await RemoveSimilarfilms(Model);
+                FilmDeleteDTO = Mapper.Map<FilmDeleteDTO>(Model);
+                await RemoveGenres(Model);
+                await AdminService.DeleteAsync<FilmDeleteDTO>($"films/{FilmDeleteDTO.Id}");
+            }
+            await OnChanged.InvokeAsync("");
+        }
+        catch
+        {
+            await OnChanged.InvokeAsync("Couldn't create/edit/delete the film.");
+        }
+    }
+
+    private async Task HandleGenresSubmit(FilmModel model)
+    {
+        await RemoveGenres(model);
+        await AddGenres(model);
+    }
+
+    private async Task RemoveGenres(FilmModel model)
+    {
+        //Remove all genres from this film
+        for (int i = 0; i < SavedGenres.Length; i++)
+        {
+            FilmGenreDTO deleteDto = new
+            (
+                model.Id,
+                SavedGenres[i]
+            );
+            await AdminService.DeleteAsyncRef<FilmGenreDTO>($"filmgenres/", deleteDto);
+        }
+    }
+    private async Task AddGenres(FilmModel model)
+    {
+        //Add all genres for this film
+        for (int i = 0; i < SelectedGenres.Length; i++)
+        {
+            FilmGenreDTO saveDto = new
+            (
+                model.Id,
+                SelectedGenres[i]
+            );
+            await AdminService.CreateAsync<FilmGenreDTO>($"filmgenres/", saveDto);
+        }
+    }
+
+    private int[] GetSelectedGenresFromDb(FilmModel model )
+    {
+        SelectedGenres = new int[model.genres.Count()];
+        int i = 0;
+        foreach (var genre in model.genres)
+        {
+            SelectedGenres[i] = genre.Id;
+            i++;
+        }
+        return SelectedGenres;
+    }
+
+    private async Task RemoveSimilarfilms(FilmModel model)
+    {
+        //Remove all similarfilms from this film
+
+        foreach (var film in model.SimilarFilms)
+        {
+            SimilarFilmsDTO deleteDto = new
+            (
+                film.ParentFilmId,
+                film.SimilarFilmId
+            );
+            await AdminService.DeleteAsyncRef<SimilarFilmsDTO>($"similarfilms/", deleteDto);
+
+            SimilarFilmsDTO deleteDto2 = new
+            (
+                film.SimilarFilmId,
+                film.ParentFilmId
+            );
+            await AdminService.DeleteAsyncRef<SimilarFilmsDTO>($"similarfilms/", deleteDto2);
+
+        }
+    }
+
+
+}

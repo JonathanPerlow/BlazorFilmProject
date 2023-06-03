@@ -1,11 +1,3 @@
-
-
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using NFLXV.Common.DTOs;
-using NFLXV.Membership.Database.Entities;
-using NFLXV.Membership.Database.Services;
-using static System.Collections.Specialized.BitVector32;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,58 +7,44 @@ ConfigureAutoMapper();
 // Configure the HTTP request pipeline.
 ConfigureMiddleware();
 
-builder.Services.AddCors(policy =>
-{
-    policy.AddPolicy("CorsAllAccessPolicy", opt =>
-    opt.AllowAnyOrigin().AllowAnyHeader()
-     .AllowAnyMethod());
-});
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<NFLXVContext>(
-    options => options.UseSqlServer(builder.Configuration.GetConnectionString("NFLXVConnection"))
-    );
-
-var app = builder.Build();
-
-
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseHttpsRedirection();
-app.UseCors("CorsAllAccessPolicy");
-
-app.UseAuthorization();
-
-app.MapControllers();
-app.Run();
 
 void ConfigureAutoMapper()
 {
     var config = new AutoMapper.MapperConfiguration(cfg =>
     {
-        cfg.CreateMap<Director, DirectorGetDTO>().ReverseMap();
-        cfg.CreateMap<Director, DirectorCreateDTO>().ReverseMap();
-        cfg.CreateMap<Director, DirectorEditDTO>().ReverseMap();
-        cfg.CreateMap<Director, DirectorDeleteDTO>().ReverseMap();
+        cfg.CreateMap<Director, DirectorGetDTO>();
 
-        cfg.CreateMap<Film, FilmGetDTO>().ReverseMap();
-        cfg.CreateMap<Film, FilmCreateDTO>().ReverseMap();
-        cfg.CreateMap<Film, FilmEditDTO>().ReverseMap();
-        cfg.CreateMap<Film, FilmDeleteDTO>().ReverseMap();
+        cfg.CreateMap<DirectorCreateDTO, Director>()
+        .ForMember(dest => dest.Films, src => src.Ignore());
 
-        cfg.CreateMap<Genre, GenreGetDTO>().ReverseMap();
-        cfg.CreateMap<Genre, GenreCreateDTO>().ReverseMap();
-        cfg.CreateMap<Genre, GenreEditDTO>().ReverseMap();
-        cfg.CreateMap<Genre, GenreDeleteDTO>().ReverseMap();
+        cfg.CreateMap<DirectorEditDTO, Director>()
+        .ForMember(dest => dest.Films, src => src.Ignore());
 
-        cfg.CreateMap<FilmGenres, FilmGenreDTO>().ReverseMap();
-        cfg.CreateMap<SimilarFilms, SimilarFilmsDTO>().ReverseMap();
+        cfg.CreateMap<DirectorDeleteDTO, Director>()
+        .ForMember(dest => dest.Films, src => src.Ignore());
+
+        cfg.CreateMap<Film, FilmGetDTO>();
+
+
+        cfg.CreateMap<FilmCreateDTO, Film>();
+        cfg.CreateMap<FilmEditDTO, Film>();
+
+        cfg.CreateMap<FilmDeleteDTO, Film>();
+        cfg.CreateMap<Film, FilmInfoDTO>().ReverseMap();
+
+
+        cfg.CreateMap<Genre, GenreGetDTO>();
+        cfg.CreateMap<GenreCreateDTO, Genre>()
+            .ForMember(dest => dest.Films, src => src.Ignore());
+        cfg.CreateMap<GenreEditDTO, Genre>()
+            .ForMember(dest => dest.Films, src => src.Ignore());
+        cfg.CreateMap<GenreDeleteDTO, Genre>()
+            .ForMember(dest => dest.Films, src => src.Ignore());
+
+
+
+        cfg.CreateMap<FilmGenreDTO, FilmGenres>();
+        cfg.CreateMap<SimilarFilmsDTO, SimilarFilm>().ReverseMap();
        
 
 
@@ -107,7 +85,6 @@ void ConfigureServices()
          .AllowAnyMethod());
     });
     builder.Services.AddControllers();
-    // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
     builder.Services.AddDbContext<NFLXVContext>(

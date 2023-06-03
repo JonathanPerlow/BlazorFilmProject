@@ -1,0 +1,26 @@
+﻿@page "/VideoPlayer/{Id:int}"
+@inject IMembershipService MemberShipService
+
+<div class="d-flex flex-column">
+    <a href="film/@Video.Id" class="btn btn-primary rounded-0">
+        <i class="oi oi-arrow-left"></i>
+        <span class="vertical-align"> Back to @Video.Title</span>
+    </a>
+    @if (Video != null && Video.FilmUrl != null)
+    {
+        <div class="video-player">
+            <iframe width="200" height="100" src="@Video.FilmUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    }
+    <h3></h3>
+</div>
+
+@code {
+    [Parameter] public int Id { get; set; }
+    [Parameter] public FilmInfoDTO Video { get; set; } = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        Video = await MemberShipService.GetFilmAsyncById(Id);
+    }
+}

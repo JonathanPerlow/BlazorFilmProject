@@ -1,0 +1,63 @@
+﻿@page "/Film/{Id:int}"
+@inject IMembershipService MemberShipService
+
+
+<div class="d-flex flex-wrap justify-content-between mb-3">
+    <Marquee Film="Model" />
+</div>
+
+
+<h1>
+    Similar Films
+</h1>
+<div class="d-flex flex-wrap">
+    @foreach (var film in Model.SimilarFilms)
+    {
+        <div class="card m-4 mb-3 rounded-0" style="width: 18rem;">
+                    <img src="@GetSimilarFilm(film.SimilarFilmId).ImageUrl" class="card-img-top rounded-0" alt="Film image">
+
+@*            <a href="Film/@GetSimilarFilm(film.SimilarFilmId).Id" class="btn btn-primary rounded-0">View @GetSimilarFilm(film.SimilarFilmId).Title</a>
+*@        </div>
+    }
+</div>
+
+
+@code {
+    public FilmInfoDTO Model { get; set; } = new();
+    public List<FilmInfoDTO> Films { get; set; } = new();
+    [Parameter] public int Id { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Model = await MemberShipService.GetFilmAsyncById(Id);
+        Films = await MemberShipService.GetFilmsAsync();
+    }
+
+    public FilmInfoDTO GetSimilarFilm(int id)
+    {
+        FilmInfoDTO result = new();
+        foreach (var film in Films)
+        {
+            if(id == film.Id)
+            {
+                 result = film;
+            }
+        }
+        return result;
+    }
+    public FilmInfoDTO GetSimilarFilmId(FilmInfoDTO Similarfilms)
+    {
+        FilmInfoDTO result = new();
+        foreach (var film in Films)
+        {
+            if (Similarfilms.Title == film.Title)
+            {
+                result = film;
+            }
+        }
+        return result;
+    }
+
+
+
+}

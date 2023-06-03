@@ -5,6 +5,9 @@ public class FilmGenreDTO
     public int GenreId { get; set; }
 
     public FilmGenreDTO(int filmId, int genreId) => (FilmId, GenreId) = (filmId, genreId);
+
+
 }
+
 
 

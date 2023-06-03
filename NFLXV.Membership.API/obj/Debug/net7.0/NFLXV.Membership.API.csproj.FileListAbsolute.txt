@@ -160,3 +160,4 @@ C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.API\
 C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.API\obj\Debug\net7.0\NFLXV.Membership.API.pdb
 C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.API\obj\Debug\net7.0\NFLXV.Membership.API.genruntimeconfig.cache
 C:\Users\46736\Documents\Webbutveckling\Labb1\NetflixVideo\NFLXV.Membership.API\obj\Debug\net7.0\ref\NFLXV.Membership.API.dll
+D:\Skola\IT högskolan\Kurs Webbutveckling\Del 1 av kursen\Blazor\Labb\NetflixVideo\NFLXV.Membership.API\bin\Debug\net7.0\Newtonsoft.Json.dll

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5JeTECBqM8/3DPoXumgjF4j/H/xH+Qrt3NKdypAZJFc=",
+  "Hash": "e5iwNxCebeZAXH6b1oSKM3L+8LkZ06RltUMC8nT5u6c=",
   "Source": "NFLXV.Admin.UI",
   "BasePath": "_content/NFLXV.Admin.UI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "NFLXV.Admin.UI\\wwwroot",
       "Source": "NFLXV.Admin.UI",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\obj\\Debug\\net7.0\\scopedcss\\bundle\\NFLXV.Admin.UI.styles.css",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\obj\\Debug\\net7.0\\scopedcss\\bundle\\NFLXV.Admin.UI.styles.css",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "NFLXV.Admin.UI.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\obj\\Debug\\net7.0\\scopedcss\\bundle\\NFLXV.Admin.UI.styles.css"
+      "OriginalItemSpec": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\obj\\Debug\\net7.0\\scopedcss\\bundle\\NFLXV.Admin.UI.styles.css"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\NFLXV.Admin.UI.bundle.scp.css",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\NFLXV.Admin.UI.bundle.scp.css",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "NFLXV.Admin.UI.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\NFLXV.Admin.UI.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\NFLXV.Admin.UI.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\css\\site.css",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\favicon.png",
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\favicon.png",
       "SourceId": "NFLXV.Admin.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46736\\Documents\\Webbutveckling\\Labb1\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
       "BasePath": "_content/NFLXV.Admin.UI",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -270,6 +270,74 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\images\\Ant Man.jpg",
+      "SourceId": "NFLXV.Admin.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "BasePath": "_content/NFLXV.Admin.UI",
+      "RelativePath": "images/Ant Man.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Ant Man.jpg"
+    },
+    {
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\images\\Iron Man.jpg",
+      "SourceId": "NFLXV.Admin.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "BasePath": "_content/NFLXV.Admin.UI",
+      "RelativePath": "images/Iron Man.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Iron Man.jpg"
+    },
+    {
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\images\\Marvel Background.jpg",
+      "SourceId": "NFLXV.Admin.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "BasePath": "_content/NFLXV.Admin.UI",
+      "RelativePath": "images/Marvel Background.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Marvel Background.jpg"
+    },
+    {
+      "Identity": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\images\\The Avengers.jpg",
+      "SourceId": "NFLXV.Admin.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Skola\\IT högskolan\\Kurs Webbutveckling\\Del 1 av kursen\\Blazor\\Labb\\NetflixVideo\\NFLXV.Admin.UI\\wwwroot\\",
+      "BasePath": "_content/NFLXV.Admin.UI",
+      "RelativePath": "images/The Avengers.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\The Avengers.jpg"
     }
   ]
 }

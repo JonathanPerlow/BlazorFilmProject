@@ -7,13 +7,39 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="HttpClients\" />
-    <Folder Include="Models\" />
-    <Folder Include="Classes\" />
-    <Folder Include="Services\" />
+    <None Remove="images\Ant Man.jpg" />
+    <None Remove="images\Iron Man.jpg" />
+    <None Remove="images\Marvel Background.jpg" />
+    <None Remove="images\The Avengers.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="images\Ant Man.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="images\Iron Man.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="images\Marvel Background.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="images\The Avengers.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Authentication\" />
+    <Folder Include="Classes\" />
     <Folder Include="JWT\" />
-    <Folder Include="Extensions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
 </Project>

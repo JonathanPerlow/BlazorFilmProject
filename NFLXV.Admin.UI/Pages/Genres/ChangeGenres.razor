@@ -1,0 +1,78 @@
+﻿@inject IAdminService AdminService
+@inject IMapper Mapper
+
+<div class="d-xl-flex justify-content-center">
+    <EditForm Model="@Model" OnValidSubmit="@OnFormSubmit" class="mb-5 border border-1 border-secondary p-2 w-25">
+        <DataAnnotationsValidator />
+        <h4>@Page Genre</h4>
+        <div class="mb-3">
+            @if (Page.Equals(PageType.Delete))
+            {
+                <InputText id="title" class="form-control me-2" @bind-Value="Model.Name" disabled placeholder="Name"></InputText>
+            }
+        </div>
+
+        @if (!Page.Equals(PageType.Delete))
+        {
+            <div class="mb-3">
+                <InputText id="released" class="form-control me-2" @bind-Value="Model.Name" placeholder="Name"></InputText>
+                <ValidationMessage For="@(() => Model.Name)" />
+            </div>
+
+        }
+
+        <button type="submit" class="btn btn-@(Page.Equals(PageType.Delete) ? "danger" : "primary") rounded-0">@Page</button>
+    </EditForm>
+</div>
+
+
+@code {
+    GenreModel Model { get; set; } = new();
+    [Parameter] public string Page { get; set; } = string.Empty;
+    [Parameter] public GenreGetDTO GenreGetDTO { get; set; } = new();
+    [Parameter] public GenreCreateDTO GenreCreateDTO { get; set; } = new();
+    [Parameter] public GenreEditDTO GenreEditDTO { get; set; } = new();
+    [Parameter] public GenreDeleteDTO GenreDeleteDTO { get; set; } = new();
+
+
+    [Parameter] public EventCallback<string> OnClick { get; set; }
+    [Parameter] public EventCallback<string> OnChanged { get; set; }
+
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        Model = Mapper.Map<GenreModel>(GenreGetDTO);
+    }
+
+    private async Task OnFormSubmit()
+    {
+        try
+        {
+
+            if (Page.Equals(PageType.Create))
+            {
+                GenreCreateDTO = Mapper.Map<GenreCreateDTO>(Model);
+                await AdminService.CreateAsync<GenreCreateDTO>("genres", GenreCreateDTO);
+            }
+            else if (Page.Equals(PageType.Edit))
+            {
+                GenreEditDTO = Mapper.Map<GenreEditDTO>(Model);
+                await AdminService.UpdateAsync<GenreEditDTO>($"genres/{GenreEditDTO.Id}", GenreEditDTO);
+            }
+            else if (Page.Equals(PageType.Delete))
+            {
+                GenreDeleteDTO = Mapper.Map<GenreDeleteDTO>(Model);
+                await AdminService.DeleteAsync<GenreDeleteDTO>($"genres/{GenreDeleteDTO.Id}");
+            }
+            await OnChanged.InvokeAsync("");
+
+        }
+        catch
+        {
+            await OnChanged.InvokeAsync("Couldn't create/edit/delete the genres.");
+        }
+    }
+}
